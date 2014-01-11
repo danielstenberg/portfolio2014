@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Daniel Stenberg</title>
+  <meta name="description" content="Visual UI Designer">
+  <meta name="author" content="Daniel Stenberg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="">
+  <link rel="apple-touch-icon" href="">
+  <link rel="apple-touch-icon" sizes="72x72" href="">
+  <link rel="apple-touch-icon" sizes="114x114" href="">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+<script type="text/javascript">
+$(".floatinglogo").delay(1000).animate({"opacity": "1"}, 700);
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 50){
+						$('header.logo').stop().animate({'opacity':'0'},400);
+        }
+		else if ($(window).scrollTop() < 50){
+						$('header.logo').stop().animate({'opacity':'1'},300);
+        }
+    });
+    
+});
+</script>
+
+<header>
+	<div class="center">
+	<div class="logo">D. Stenberg</div>
+	</div>
+</header>
+
+<article class="post">
+	<div class="project-image">
+	image area
+	</div>
+	<div class="project-description">
+		<h1>Project name</h1>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel molestie diam. Interdum et malesuada fames ac ante ipsum primis in 				faucibus. Morbi risus dui, suscipit fermentum enim bibendum, interdum aliquet felis. Praesent tincidunt lectus quis lacinia adipiscing.
+		</p>
+	</div>
+</article>
+
+
+
+
+</body>
+</html>
