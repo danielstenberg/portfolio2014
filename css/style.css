@@ -167,7 +167,16 @@ a:hover {
 	color: #fff;
 }
 
+/* ----------------------- Wrapper ----------------------- */
 
+#wrapper {
+	width: 97.5%;
+	height: auto;
+	margin: 1.2% auto;
+	background-color: #fff;
+	display: block;
+	
+}
 
 
 /* ----------------------- Header ----------------------- */
