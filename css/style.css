@@ -31,8 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 
-/* =Global
------------------------------------------------ */
+/* ----------------------- Global ----------------------- */
 
 body, input, textarea {
 	color: #666;
@@ -117,14 +116,20 @@ a:hover {
 /* ----------------------- Button ----------------------- */
 
 .button {
+	font-family: 'Montserrat', Helvetica, sans-serif;
+	font-size: 0.85em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	font-weight: bold;	
 	background-color: transparent;
 	border: solid 3px #000;
 	cursor: pointer;
 	display: inline-block;
 	height: 44px;
-	width: 165px;
-	line-height: 37px;
-	margin: 2em 2em 0 0;
+	width: auto; /* 195 */
+	line-height: 38px;
+	margin: 5% 5% 0 0;
+	padding: 0 1%;
 	text-align: center;
 	-webkit-transition: border, background-color 0.25s;
 	-moz-transition: border, background-color 0.25s;
@@ -167,6 +172,17 @@ a:hover {
 
 /* ----------------------- Header ----------------------- */
 
+.center {
+	text-align: center;
+	position: absolute;
+	top: 60px;
+	left: 0px;
+	width: 100%;
+	height: 0px;
+	visibility: visible;
+	display: block;
+}
+
 header {
 	height: 200px;
 	width: 100%;
@@ -196,7 +212,6 @@ header .logo {
 	transition: border, background-color 0.25s;
 	overflow: hidden;
 	text-decoration: none;
-	cursor: default;
     animation: fadein 1.5s;
     -moz-animation: fadein 1.5s; 
     -webkit-animation: fadein 1.5s; 
@@ -210,10 +225,10 @@ header .logo span {
 	padding: 0 1em;
 	position: relative;
 	top: 0%;
-  -webkit-transition: background-color, top 0.25s;
-  -moz-transition: background-color,top 0.25s;
-  transition: background-color, top 0.25s;
-  width: 100%;
+    -webkit-transition: background-color, top 0.25s;
+    -moz-transition: background-color,top 0.25s;
+    transition: background-color, top 0.25s;
+    width: 100%;
 }
 
 header .logo span:after {
@@ -231,16 +246,7 @@ header .logo:hover span {
 	top: -100%;
 	color: #000;
 }
-.center {
-	text-align: center;
-	position: absolute;
-	top: 60px;
-	left: 0px;
-	width: 100%;
-	height: 0px;
-	visibility: visible;
-	display: block;
-}
+
 
 @keyframes fadein {
     from { opacity:0; }
@@ -264,11 +270,11 @@ header .logo:hover span {
 
 	
 
-/* ----------------------- Content ----------------------- */
+/* ----------------------- Works ----------------------- */
 
 article {
 	width: 100%;
-	height: 650px;
+	height: 700px;
 	background-color: transparent;
 	border-bottom: 1px solid #ccc;
 
@@ -276,25 +282,20 @@ article {
 
 article .project-description {
 	float: right;
-	width: 36%;
+	width: 34%;
 	background-color: transparent;
-	margin: 9% 8% 0 0;
+	margin: 12% 8% 0 0;
 	
 }
 
 article .project-image {
 	float: left;
-	width: 45%;
-	margin: 6% 0 0 5%;
+	width: 48%;
+	margin: 9% 0 0 5%;
 	
 }
 
-article .post {	
-}
 
-
-article p {	
-}
 
 
 
@@ -302,6 +303,28 @@ article p {
 
 
 @media screen and (max-width: 480px) { /* 480 */
+
+article {
+	height: auto;
+}
+
+article .project-description {
+	float: none;
+	width: 90%;
+	margin: 10% auto;
+	
+}
+
+article .project-image {
+	float: none;
+	width: 90%;
+	margin: 10% auto;
+	
+}
+
+h1 {
+	text-align: center;
+}
 
 } /* end media query */
 
