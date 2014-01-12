@@ -21,15 +21,15 @@
 <body>
 
 <script type="text/javascript">
-$(".floatinglogo").delay(1000).animate({"opacity": "1"}, 700);
+$("header").delay(1000).animate({"opacity": "1"}, 1000);
 
 $(document).ready(function(){
     $(window).scroll(function(){
         if ($(window).scrollTop() > 50){
-						$('header.logo').stop().animate({'opacity':'0'},400);
+						$('header').stop().animate({'opacity':'0'},300);
         }
 		else if ($(window).scrollTop() < 50){
-						$('header.logo').stop().animate({'opacity':'1'},300);
+						$('header').stop().animate({'opacity':'1'},300);
         }
     });
     
@@ -38,19 +38,24 @@ $(document).ready(function(){
 
 <header>
 	<div class="center">
-	<div class="logo">D. Stenberg</div>
+	<div class="logo"><span data-label="D for Daniel">D. Stenberg</span></div>
 	</div>
 </header>
 
+
+
 <article class="post">
 	<div class="project-image">
-	image area
+		<img src="img/browser_vardagsbrus_portfolio.png" alt="">
 	</div>
 	<div class="project-description">
 		<h1>Project name</h1>
 		<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel molestie diam. Interdum et malesuada fames ac ante ipsum primis in 				faucibus. Morbi risus dui, suscipit fermentum enim bibendum, interdum aliquet felis. Praesent tincidunt lectus quis lacinia adipiscing.
 		</p>
+		<a href="#" alt="" class="button"><span data-label="View case study">View case study</span></a>
+		<a href="#" alt="" class="button"><span data-label="Visit site">Visit site</span></a>
+
 	</div>
 </article>
 
